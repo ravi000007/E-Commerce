@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecommerce
+    username: root
+    password: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate.ddl-auto: update
+  application:
+   name: user-service
+  thymeleaf:
+   prefix: classpath:/templates/ 
+   suffix: .html
+   mode: HTML
+   encoding: UTF-8
+   servlet:
+    content-type: text/html
+server:
+  port: 8081
+  
+logging:
+ file:
+  name: logger.log
+ pattern:
+  file: '%d{yyyy-MM-dd}{%level}%'
+  
+  
